@@ -12,10 +12,10 @@ export default function SplashScreen() {
 
   return (
     <View style={style.body}>
-      <Image source={require("../../../assets/images/icon-white.svg")} />
-      <View>
-        <Text style={style.text1}>Calcula</Text>
-        <Text style={style.text2}>Xurras</Text>
+      <Image source={require("../../../assets/images/icon-white.png")} style={style.icon}/>
+      <View style={style.textContainer}>
+        <Text style={style.text1}>CALCULA</Text>
+        <Text style={style.text2}>XURRAS</Text>
       </View>
     </View>
   );
@@ -29,6 +29,8 @@ const style = StyleSheet.create({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    flexDirection: 'row',
+    gap: 5,
   },
   text1: {
     color: "#FFF",
@@ -37,6 +39,16 @@ const style = StyleSheet.create({
   },
   text2: {
     color: "#FFF",
-    fontSize: 40,
+    fontSize: 25,
+    fontWeight: '300'
   },
+  textContainer: {
+    display: 'flex',
+    gap: -10
+  },
+  icon: {
+    resizeMode: 'contain',
+    width:  90,
+    height: 60
+  }
 });
