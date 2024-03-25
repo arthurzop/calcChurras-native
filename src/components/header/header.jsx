@@ -4,10 +4,10 @@ export default function Header(){
     return (
         <View style = {style.Body}>
 
-            {/* container da imagem */}
+            {/* container da imagem */}''
             <View style = {style.contImage}>
-                <Image  
-                style = {compImage}
+                <Image 
+                style = {style.compImage}
                  />
             </View>
 

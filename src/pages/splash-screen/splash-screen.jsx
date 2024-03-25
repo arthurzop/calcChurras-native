@@ -1,5 +1,4 @@
 import { View, Text, StyleSheet, Image } from "react-native";
-import icon from "../../../assets/images/icon-white.svg";
 import { useEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 
