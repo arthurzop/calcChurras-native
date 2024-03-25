@@ -7,7 +7,7 @@ export default function Header(){
             {/* container da imagem */}
             <View style = {style.contImage}>
                 <Image  
-                style = {compImage}
+                style = {style.compImage}
                  />
             </View>
 
