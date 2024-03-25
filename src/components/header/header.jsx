@@ -4,11 +4,9 @@ export default function Header(){
     return (
         <View style = {style.Body}>
 
-            {/* container da imagem */}
+            {/* container da imagem */}''
             <View style = {style.contImage}>
-                <Image  
-                style = {style.compImage}
-                 />
+
             </View>
 
             {/* container da Logo */}
@@ -21,5 +19,13 @@ export default function Header(){
 };
 
 const style = StyleSheet.create({
+    contImage: {
 
+    },
+    contLogo: {
+
+    },
+    Body: {
+        
+    }
 })
