@@ -1,0 +1,8 @@
+--color-azul-escuro: #2b2d42;
+	--color-cinza: #8d99ae;
+	--color-cinza-claro: #edf2f4;
+	--color-branco: #ffffff;
+	--color-vermelho-1: #ef233c;
+	--color-vermelho-2: #d90429;
+	--color-preto: #000000;
+	--color-cinza-escuro: #585f6b;
