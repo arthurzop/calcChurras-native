@@ -11,23 +11,27 @@ export default function Button() {
 }
 
 const style = StyleSheet.create({
-    button: {
-        backgroundColor: '#d90429',
-        width: 100,
-        height: 40,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        paddingHorizontal: 20,
-        paddingVertical:   5,
-        borderRadius: 5
-    },
-    buttonContainer: {
-        display: 'flex',
-        alignItems: 'center'
-    },
-    buttonText: {
-        color: '#FFF',
-        fontSize: 20
-    }
-})
+  button: {
+    backgroundColor: "#d90429",
+    width: 120,
+    height: 50,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    paddingVertical: 5,
+    borderRadius: 5,
+  },
+  buttonContainer: {
+    alignItems: "center",
+    width: "100%",
+    height: "100%",
+    position: "absolute",
+    justifyContent: "flex-end",
+    bottom: 20,
+  },
+  buttonText: {
+    color: "#FFF",
+    fontSize: 24,
+    fontWeight: "bold",
+  },
+});
