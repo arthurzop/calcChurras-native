@@ -8,7 +8,7 @@ export default function Button() {
   return (
     <S.ButtonContainer>
       <S.Button onPress={() => {nav.navigate('criar')}}>
-        <S.ButtonText>Entrar</S.ButtonText>
+        <S.ButtonText>Criar</S.ButtonText>
       </S.Button>
     </S.ButtonContainer>
   );

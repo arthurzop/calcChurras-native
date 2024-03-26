@@ -2,7 +2,7 @@ import * as S from "./style.jsx";
 
 export default function Card() {
   return (
-    <S.Body>
+    <S.Body activeOpacity={.8}>
       <S.topContainer>
         <S.Title>Titulo</S.Title>
         <S.Container>
@@ -11,34 +11,36 @@ export default function Card() {
         </S.Container>
       </S.topContainer>
       <S.BottomContainer>
-        <S.SubColumn>
+        
           <S.Column>
-            <S.Info>Homens:</S.Info>
-            <S.Info>Mulheres:</S.Info>
-            <S.Info>Crianças:</S.Info>
-            <S.Info>Total: </S.Info>
+            <S.Info>
+              Homens: <S.Text>10</S.Text>
+            </S.Info>
+            <S.Info>
+              Mulheres:<S.Text>10</S.Text>
+            </S.Info>
+            <S.Info>
+              Crianças:<S.Text>10</S.Text>
+            </S.Info>
+            <S.Info>
+              Total: <S.Text>10</S.Text>
+            </S.Info>
           </S.Column>
-          <S.Column>
-            <S.Text>10</S.Text>
-            <S.Text>8</S.Text>
-            <S.Text>6</S.Text>
-            <S.Text>24</S.Text>
-          </S.Column>
-        </S.SubColumn>
-        <S.SubColumn>
-          <S.Column>
-            <S.Info>Homens:</S.Info>
-            <S.Info>Mulheres:</S.Info>
-            <S.Info>Crianças:</S.Info>
-            <S.Info>Total: </S.Info>
-          </S.Column>
-          <S.Column>
-            <S.Text>10</S.Text>
-            <S.Text>8</S.Text>
-            <S.Text>6</S.Text>
-            <S.Text>24</S.Text>
-          </S.Column>
-        </S.SubColumn>
+        
+          <S.Column2>
+            <S.Info>
+              Preço Total: <S.Text>R$ 1.000</S.Text>
+            </S.Info>
+            <S.Info>
+              Preço por Pessoa: <S.Text>R$ 45.00</S.Text>
+            </S.Info>
+            <S.Info>
+              Local: <S.Text>Avenida Paulista, 130</S.Text>
+            </S.Info>
+            <S.Info>
+              Contato: <S.Text> 55+ 13 97234-4001</S.Text>
+            </S.Info>
+          </S.Column2>
       </S.BottomContainer>
     </S.Body>
   );

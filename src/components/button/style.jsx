@@ -1,5 +1,4 @@
-import styled from 'styled-components/native'
-
+import styled from "styled-components/native";
 
 export const Button = styled.TouchableOpacity`
   background-color: #d90429;
@@ -10,6 +9,7 @@ export const Button = styled.TouchableOpacity`
   justify-content: center;
   border-radius: 5px;
   position: fixed;
+  elevation: 10;
 `;
 
 export const ButtonContainer = styled.View`
@@ -18,6 +18,7 @@ export const ButtonContainer = styled.View`
   width: 100%;
   position: absolute;
   z-index: 2;
+
 `;
 
 export const ButtonText = styled.Text`

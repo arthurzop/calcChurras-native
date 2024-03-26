@@ -1,49 +1,50 @@
-import styled from 'styled-components/native';
+import styled from "styled-components/native";
 
 export const TextContainer = styled.View`
   display: flex;
   align-items: center;
   justify-content: center;
   gap: -5px;
-  
 `;
 
 export const Body = styled.View`
   width: 100%;
-  height: 120px;
-  padding-top: 60px;
+  height: 140px;
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   position: fixed;
   z-index: 10;
-  background-color: #FFF;
+  background-color: #fff;
+  elevation: 10;
 `;
 
 export const subContainer = styled.View`
-  width: 60%;
+  width: 59%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-left: 10px;
-
-`
+  margin-left: 20px;
+`;
 
 export const Text1 = styled.Text`
-  font-size: 26px;
+  font-size: 30px;
   text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
 `;
 
 export const Text2 = styled.Text`
-  font-size: 18px;
+  font-size: 15px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-align: center;
 `;
 
 export const Divider = styled.View`
   width: 100%;
   border-color: #8d99ae;
   border-width: 0.2px;
-  margin-top: 10px;
 `;

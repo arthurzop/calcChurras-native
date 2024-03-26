@@ -1,13 +1,17 @@
 import styled from "styled-components/native";
 
-export const Body = styled.ScrollView`
+export const Body = styled.TouchableOpacity`
   width: 90%;
   height: fit-content;
   margin: 20px;
   display: flex;
   background-color: #fff;
-  padding: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  elevation: 5;
+
 `;
+
 export const topContainer = styled.View`
   width: 100%;
   height: fit-content;
@@ -18,6 +22,7 @@ export const topContainer = styled.View`
   border-bottom-width: 2px;
   border-bottom-color: #8d99ae;
   border-bottom-style: solid;
+  margin-bottom: 20px;
 `;
 
 export const Container = styled.View`
@@ -42,10 +47,13 @@ export const SubTitle = styled.Text`
 export const Text = styled(SubTitle)`
   font-weight: 400;
   color: #ef233c;
+  text-align: right;
+
 `;
 
 export const Info = styled(Text)`
   color: #585f6b;
+  text-align: left;
 `;
 
 export const BottomContainer = styled.View`
@@ -53,14 +61,19 @@ export const BottomContainer = styled.View`
   display: flex;
   flex-direction: row;
   height: fit-content;
+  gap: -15px;
 `;
 
 export const Column = styled.View`
-  background-color: #888;
-  width: 50%;
+  /* background-color: #888; */
+  display: flex;
+  gap: 8px;
+  width: 49%;
+
 `;
 
-export const SubColumn = styled(Column)`
+export const Column2 = styled.View`
   display: flex;
-  flex-direction: row;
-`;
+  gap: 8px;
+  width: 100%;
+`
