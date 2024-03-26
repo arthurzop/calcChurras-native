@@ -18,9 +18,11 @@ export default function HomePage() {
             <Card/>
             <Card/>
             <Card/>
-           
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
           </S.CardContainer>
-        
     </S.Body>
   );
 }
