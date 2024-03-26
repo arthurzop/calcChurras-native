@@ -1,37 +1,26 @@
-import { View, Text, StyleSheet, Image } from 'react-native';
+import * as R from 'react-native';
 import iconRed from '../../../assets/images/icon-red.png';
-export default function Header(){
+import * as S from './style'
+import { useNavigation } from '@react-navigation/native';
+export default function Header() {
+    const nav = useNavigation()
     return (
-        <View style = {style.Body}>
+        <S.Body>
+            <S.subContainer>
+                {/* container da imagem */}
+                <R.Pressable onPress={() => { nav.navigate("splash") }}>
+                    <R.Image
+                        source={iconRed}
+                    />
+                </R.Pressable>
 
-            {/* container da imagem */}
-            <View style = {style.contImage}>
-            <Image
-                style = {style.compImage}
-                source={iconRed} />
-            </View>
-
-            {/* container da Logo */}
-            <View style = {style.contLogo}>
-                <Text>Calcula</Text>
-                <Text>Xurras</Text>
-            </View>
-        </View>
+                {/* container da Logo */}
+                <S.TextContainer>
+                    <S.Text1>Calcula</S.Text1>
+                    <S.Text2>Xurras</S.Text2>
+                </S.TextContainer>
+            </S.subContainer>
+            <S.Divider />
+        </S.Body>
     );
 };
-
-const style = StyleSheet.create({
-    contImage: {
-        
-        width: '50%',
-        color: 'white',
-    },
-    contLogo: {
-        width: '50%',
-        color: 'white',
-    },
-    Body: {
-        width: '50%',
-        color: 'white',
-    }
-})

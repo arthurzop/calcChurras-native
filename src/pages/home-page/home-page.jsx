@@ -1,24 +1,14 @@
-import { View, Text, StyleSheet } from "react-native";
+import * as R from 'react-native'
+import * as S from './style.jsx'
 import Header from "../../components/header/header";
 import Button from "../../components/button/button";
 
 export default function HomePage() {
   return (
-
-    <View>
+    <S.Body>
         <Header />
 
-    <View> 
-    </View>
         <Button />
-    </View>
+    </S.Body>
   );
 }
-
-const style = StyleSheet.create({
-    body: {
-        height: '100%',
-        width:  '100%',
-        display: 'flex'
-    }
-})

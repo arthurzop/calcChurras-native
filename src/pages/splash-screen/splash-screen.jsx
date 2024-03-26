@@ -1,7 +1,11 @@
-import { View, Text, StyleSheet, Image, Pressable } from "react-native";
-import icon from "../../../assets/images/icon-white.png";
+import * as R from 'react-native'
+import * as S from './style.jsx'
 import { useEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
+
+import icon from "../../../assets/images/icon-white.png";
+
+
 
 export default function SplashScreen() {
   const nav = useNavigation();
@@ -13,50 +17,19 @@ export default function SplashScreen() {
   });
 
   return (
-    <View style={style.body}>
-      <Pressable
+    <S.Body>
+      <R.Pressable
         onPress={() => {
           nav.navigate("home");
         }}
       >
-        <Image source={icon} style={style.icon} />
-      </Pressable>
-      <View style={style.textContainer}>
-        <Text style={style.text1}>CALCULA</Text>
-        <Text style={style.text2}>XURRAS</Text>
-      </View>
-    </View>
+        <S.Icon source={icon}/>
+      </R.Pressable>
+      <S.TextContainer>
+        <S.Text1>CALCULA</S.Text1>
+        <S.Text2>XURRAS</S.Text2>
+      </S.TextContainer>
+    </S.Body>
   );
 }
 
-const style = StyleSheet.create({
-  body: {
-    width: "100%",
-    backgroundColor: "#d90429",
-    height: "100%",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    flexDirection: "row",
-    gap: 5,
-  },
-  text1: {
-    color: "#FFF",
-    fontWeight: "bold",
-    fontSize: 50,
-  },
-  text2: {
-    color: "#FFF",
-    fontSize: 25,
-    fontWeight: "300",
-  },
-  textContainer: {
-    display: "flex",
-    gap: -10,
-  },
-  icon: {
-    resizeMode: "contain",
-    width: 90,
-    height: 60,
-  },
-});
