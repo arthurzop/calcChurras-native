@@ -5,6 +5,7 @@ const Stack = createNativeStackNavigator()
 
 import SplashScreen from './src/pages/splash-screen/splash-screen';
 import HomePage from './src/pages/home-page/home-page';
+import Criar from './src/pages/criar-churras/criar';
 
 export default function App() {
   return (
@@ -18,6 +19,11 @@ export default function App() {
           <Stack.Screen
             name="home"
             component={HomePage}
+            options={{ title: null }}
+          />
+          <Stack.Screen
+            name="criar"
+            component={Criar}
             options={{ title: null }}
           />
       </Stack.Navigator>
