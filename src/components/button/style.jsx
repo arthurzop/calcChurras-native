@@ -9,16 +9,15 @@ export const Button = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+  position: fixed;
 `;
 
 export const ButtonContainer = styled.View`
   align-items: center;
-  justify-content: flex-end;
+  top: 800px;
   width: 100%;
-  height: 100%;
   position: absolute;
-  bottom: 20px;
-  z-index: 0;
+  z-index: 2;
 `;
 
 export const ButtonText = styled.Text`

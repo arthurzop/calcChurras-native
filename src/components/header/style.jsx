@@ -5,6 +5,7 @@ export const TextContainer = styled.View`
   align-items: center;
   justify-content: center;
   gap: -5px;
+  
 `;
 
 export const Body = styled.View`
@@ -13,6 +14,9 @@ export const Body = styled.View`
   padding-top: 60px;
   display: flex;
   justify-content: center;
+  position: fixed;
+  z-index: 10;
+  background-color: #FFF;
 `;
 
 export const subContainer = styled.View`
@@ -41,5 +45,5 @@ export const Divider = styled.View`
   width: 100%;
   border-color: #8d99ae;
   border-width: 0.2px;
-  margin-top: 20px;
+  margin-top: 10px;
 `;

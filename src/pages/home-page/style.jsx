@@ -5,3 +5,9 @@ export const Body = styled.View`
     width: 100%;
     display: flex;
 `
+
+export const CardContainer = styled.ScrollView  `
+    height: 100%;
+    width: 100%;
+
+`
