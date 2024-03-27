@@ -4,6 +4,7 @@ export const Body = styled.View`
   width: 100%;
   height: 100%;
   display: flex;
+  background-color: #FFF;
 `;
 
 export const CriarContainer = styled.ScrollView`
@@ -16,6 +17,8 @@ export const Container = styled.View`
   width: 100%;
   display: flex;
   align-items: center;
+  margin-top: 15px;
+  gap: 20px;
 `;
 
 export const SubContainer = styled.View`
@@ -25,39 +28,43 @@ flex-direction: row;
 justify-content: space-around;
 `
 
-export const Column = styled.View``
+export const Column = styled.View`
+  display: flex;
+  gap: 15px;
+`
 
+export const Input = styled.TextInput`
+  font-size: 40px;
+  font-weight: bold;
+  color: #2b2d42;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+`;
 
-export const Input = styled.TextInput``;
+export const SubTitle = styled.Text`
+  font-size: 24px; 
+  font-weight: 500;
+`;
 
-export const SubTitle = styled.Text``;
+export const Label = styled.Text`
+  color: #585f6b;
 
-export const Label = styled.Text``;
+`;
 
-// export const Container = styled.View`
+export const InputNumber = styled.TextInput`
+  padding-horizontal: 10px;
+  padding-vertical: 5px;
+  color: #ef233c;
+  border-color: #8d99ae;
+  border-width: 0.2px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 26px;
+`
 
-// `
-
-// export const Text = styled.Text`
-
-// `
-
-// export const Divider = styled.View`
-
-// `
-
-// export const NumberInput = styled.NumberInput`
-
-// `
-
-// export const Column = styled.View`
-
-// `
-
-// export const Checkbox = styled.Checkbox`
-
-// `
-
-// export const CheckboxContainer = styled.View`
-
-// `
+export const Divider = styled.View`
+  width: 75%;
+  border-color: #8d99ae;
+  border-width: .5px;
+`
