@@ -1,4 +1,4 @@
---color-azul-escuro: #2b2d42;
+	--color-azul-escuro: #2b2d42;
 	--color-cinza: #8d99ae;
 	--color-cinza-claro: #edf2f4;
 	--color-branco: #ffffff;
