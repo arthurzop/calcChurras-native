@@ -33,6 +33,15 @@ export const Column = styled.View`
   gap: 15px;
 `
 
+export const CheckboxContainer = styled.View`
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  justify-content: space-between;
+`
+
 export const Input = styled.TextInput`
   font-size: 40px;
   font-weight: bold;
