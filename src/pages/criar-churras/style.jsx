@@ -18,6 +18,7 @@ export const Container = styled.View`
   display: flex;
   align-items: center;
   margin-top: 15px;
+  margin-bottom: 50px;
   gap: 20px;
 `;
 
@@ -54,11 +55,11 @@ export const Input = styled.TextInput`
 export const SubTitle = styled.Text`
   font-size: 24px; 
   font-weight: 500;
+  padding: 6px;
 `;
 
 export const Label = styled.Text`
   color: #585f6b;
-
 `;
 
 export const InputNumber = styled.TextInput`
@@ -77,3 +78,14 @@ export const Divider = styled.View`
   border-color: #8d99ae;
   border-width: .5px;
 `
+
+export const Icon = styled.Image`
+
+`
+
+export const Form = styled.TextInput`
+  border-bottom-width: 1px;
+  border-bottom-color: #d90429;
+  width: 70%;
+`
+
