@@ -15,12 +15,12 @@ export const Text1 = styled.Text`
   color: #fff;
   font-weight: bold;
   font-size: 50px;
+  font-family: sans-serif;
 `;
 
 export const Text2 = styled.Text`
   color: #fff;
   font-size: 25px;
-  font-weight: 300;
 `;
 
 export const TextContainer = styled.View`
