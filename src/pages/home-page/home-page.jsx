@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <S.Body>
         <Header />
-        <Button label={"Criar Novo"}/>
+        <Button label={"Criar Novo"} rota='criar'/>
           <S.CardContainer>
             <Card/>
             <Card/>
