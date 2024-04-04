@@ -19,6 +19,13 @@ export default function SplashScreen() {
 
   //pesquisar como faz as fontes
 
+  useEffect(() => {
+    setTimeout(() => {
+      nav.navigate("home");
+    }, 2000);
+  });
+
+
   return (
     <S.Body>
       <R.Pressable

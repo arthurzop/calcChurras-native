@@ -3,6 +3,7 @@ import * as S from "./style";
 import { useNavigation } from "@react-navigation/native";
 
 import iconRed from "../../../assets/images/icon-red.png";
+import receita from '../../../assets/images/receita.png'
 
 export default function Header() {
   const nav = useNavigation();
@@ -23,6 +24,13 @@ export default function Header() {
           <S.Text1>Calcula</S.Text1>
           <S.Text2>Xurras</S.Text2>
         </S.TextContainer>
+        <R.Pressable
+          onPress={() => {
+            nav.navigate("receita");
+          }}
+        >
+          <R.Image source={receita} />
+        </R.Pressable>
       </S.subContainer>
     </S.Body>
     <S.Divider/>

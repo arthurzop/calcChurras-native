@@ -20,7 +20,7 @@ export const Body = styled.View`
 `;
 
 export const subContainer = styled.View`
-  width: 59%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

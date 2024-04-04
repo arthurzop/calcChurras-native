@@ -8,6 +8,7 @@ import SplashScreen from "./src/pages/splash-screen/splash-screen";
 import HomePage from "./src/pages/home-page/home-page";
 import Criar from "./src/pages/criar-churras/criar";
 import Detalhes from "./src/pages/detalhes/detalhes";
+import Receitas from "./src/pages/receitas/receita";
 
 export default function App() {
 
@@ -35,6 +36,12 @@ export default function App() {
             name='detalhes'
             component={Detalhes}
             options={{title: null}}
+          />
+          <Stack.Screen
+            name='receita'
+            component={Receitas}
+            options={{title: null}}
+
           />
         </Stack.Navigator>
       </NavigationContainer>
