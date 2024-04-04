@@ -23,6 +23,8 @@ export default function SplashScreen() {
   //   }, 2000);
   // });
 
+  //pesquisar como faz as fontes
+
   return (
     <S.Body>
       <R.Pressable
