@@ -12,7 +12,7 @@ export const Button = styled.TouchableOpacity`
   elevation: 10;
 `;
 
-export const ButtonContainer = styled.View`
+export const ButtonContainer = styled.Pressable`
   align-items: center;
   top: 780px;
   width: 100%;
