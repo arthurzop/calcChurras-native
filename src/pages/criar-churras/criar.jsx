@@ -1,5 +1,4 @@
 import * as S from "./style.jsx";
-import * as R from "react-native";
 import Header from "../../components/header/header";
 import Button from "../../components/button/button";
 // import DatePicker from "react-native-date-picker";
@@ -10,6 +9,7 @@ import beef from "../../../assets/images/beef.png";
 import beer from "../../../assets/images/beer.png";
 import dish from "../../../assets/images/dish.png";
 import fork from "../../../assets/images/fork.png";
+import details from '../../../assets/images/details.png'
 
 export default function Criar() {
   const [checked, setChecked] = useState(false);
@@ -24,7 +24,7 @@ export default function Criar() {
   return (
     <S.Body>
       <Header />
-      <Button label="Criar" />
+      <Button label="Criar" rota='detalhes'/>
       <S.CriarContainer>
         <S.Container>
           <S.Input placeholder="Nome do Xurras" maxLength={20} />
@@ -61,7 +61,7 @@ export default function Criar() {
           <S.Container>
             <S.Divider />
             <S.SubTitle>
-              <S.Icon source={beef} /> Cortes
+              <S.Icon source={beef}/> Cortes
             </S.SubTitle>
             <S.CheckboxContainer>
               <Checkbox label="Picanha" />
@@ -111,7 +111,7 @@ export default function Criar() {
             </S.CheckboxContainer>
             <S.Divider />
             <S.SubTitle>
-              <S.Icon source={fork} /> Detalhes
+              <S.Icon source={details} /> Detalhes
             </S.SubTitle>
             {/* <DatePicker
               // modal
@@ -125,6 +125,7 @@ export default function Criar() {
                 setOpen(false);
               }}
             /> */}
+            <S.Form placeholder="Data:"/>
             <S.Form placeholder="Local:" />
             <S.Form
               placeholder="Contato do Responsável:"
