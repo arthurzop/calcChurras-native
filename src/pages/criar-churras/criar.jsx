@@ -2,8 +2,9 @@ import * as S from "./style.jsx";
 import * as R from "react-native";
 import Header from "../../components/header/header";
 import Button from "../../components/button/button";
+// import DatePicker from "react-native-date-picker";
 // import { CheckBox } from "@rneui/base";
-import { useState } from "react";
+import React, { useState } from "react";
 import Checkbox from "../../components/checkbox/checkbox.jsx";
 import beef from "../../../assets/images/beef.png";
 import beer from "../../../assets/images/beer.png";
@@ -12,6 +13,9 @@ import fork from "../../../assets/images/fork.png";
 
 export default function Criar() {
   const [checked, setChecked] = useState(false);
+
+  // const [date, setDate] = useState(new Date())
+  // const [open, setOpen] = useState(false)
 
   //   const valorInicial = [{ id: "homens", value: 1 }];
   //   const [numHomens, setNumHomens] = useState(valorInicial);
@@ -109,9 +113,23 @@ export default function Criar() {
             <S.SubTitle>
               <S.Icon source={fork} /> Detalhes
             </S.SubTitle>
-            <S.Form placeholder="Data:"/>
-            <S.Form placeholder="Local:"/>
-            <S.Form placeholder="Contato do Responsável:" keyboardType="numeric"/>
+            {/* <DatePicker
+              // modal
+              open={open}
+              date={date}
+              onConfirm={(date) => {
+                setOpen(false);
+                setDate(date);
+              }}
+              onCancel={() => {
+                setOpen(false);
+              }}
+            /> */}
+            <S.Form placeholder="Local:" />
+            <S.Form
+              placeholder="Contato do Responsável:"
+              keyboardType="numeric"
+            />
           </S.Container>
         </S.Container>
       </S.CriarContainer>
